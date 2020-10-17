@@ -1,10 +1,10 @@
-import React, {useState} from 'react'
-import './UseStateComponent.less'
+import React, {useState} from 'react';
+import './UseStateComponent.less';
 
 const computeInitialCounter = () => {
   console.log('Some calculation...')
   return Math.trunc(Math.random() * 50)
-}
+};
 
 const UseStateComponent = props => {
   const [counter, setCounter] = useState(() => {
@@ -59,6 +59,6 @@ const UseStateComponent = props => {
       </div>
     </div>
   )
-}
+};
 
 export default UseStateComponent;

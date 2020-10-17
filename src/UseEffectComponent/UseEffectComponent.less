@@ -1,7 +1,7 @@
-.counter {
+.posts-container {
   user-select: none;
   max-width: 350px;
-  margin: 0 auto;
+  margin: 10px auto;
   border: 1px solid black;
   padding: 20px;
 
@@ -11,18 +11,12 @@
     justify-content: space-around;
   }
 
-  &__display {
-    max-width: 200px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
   &__btn {
     margin-top: 10px;
     display: flex;
     justify-content: space-around;
 
-    &-add {
+    &-users {
       padding: 5px;
       text-transform: uppercase;
       cursor: pointer;
@@ -32,30 +26,35 @@
       color: white;
     }
 
-    &-remove {
+    &-todos {
       padding: 5px;
       text-transform: uppercase;
       cursor: pointer;
       text-align: center;
       border-radius: 3px;
-      background-color: #800000;
+      background-color: green;
+      color: white;
+    }
+
+    &-posts {
+      padding: 5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      text-align: center;
+      border-radius: 3px;
+      background-color: green;
       color: white;
     }
   }
 
-  &__inp {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-around;
+  &__display {
+    margin: 10px auto;
+    overflow: scroll;
+    overflow-x: hidden;
+    max-height: 300px;
 
-    &-btn {
-      padding: 5px;
-      text-transform: uppercase;
-      cursor: pointer;
-      text-align: center;
-      border-radius: 3px;
-      background-color: #000680;
-      color: white;
+    pre {
+      white-space: pre-line;
     }
   }
 }
