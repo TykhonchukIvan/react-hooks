@@ -1,9 +1,7 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './UseRefComponent.less';
 
-const UseRefComponent = () => {
-  console.log('Render UseRefComponent')
-
+export default () => {
   const [value, setValue] = useState('initial')
   const renderCount = useRef(1)
   const inputRef = useRef(null)
@@ -32,5 +30,4 @@ const UseRefComponent = () => {
       </div>
     </div>
   )
-}
-export default UseRefComponent;
+};

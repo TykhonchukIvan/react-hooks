@@ -2,10 +2,7 @@ import React, {useState, useCallback} from 'react';
 import ItemsList from './ItemsList';
 import './UseCallbackComponent.less';
 
-const UseCallbackComponent = () => {
-
-  console.log('Render UseCallbackComponent')
-
+export default () => {
   const [colored, setColored] = useState(false)
   const [count, setCount] = useState(1)
 
@@ -38,5 +35,4 @@ const UseCallbackComponent = () => {
       </div>
     </div>
   )
-}
-export default UseCallbackComponent;
+};

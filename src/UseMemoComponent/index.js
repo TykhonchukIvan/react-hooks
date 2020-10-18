@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useMemo} from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import './UseMemoComponent.less'
 
 const complexCompute = (num) => {
@@ -7,13 +7,9 @@ const complexCompute = (num) => {
   return num * 2;
 }
 
-const UseMemoComponent = () => {
-
-  console.log('Render UseMemoComponent')
-
+export default () => {
   const [number, setNumber] = useState(50)
   const [colored, setColored] = useState(false)
-
 
   const styles = useMemo(() => {
     return {color: colored ? 'darkred' : 'black'}
@@ -45,6 +41,4 @@ const UseMemoComponent = () => {
       </div>
     </div>
   )
-
-}
-export default UseMemoComponent;
+};

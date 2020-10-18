@@ -1,10 +1,7 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import './UseEffectComponent.less';
 
-const UseEffectComponent = () => {
-
-  console.log('Render UseEffectComponent')
-
+export default () => {
   const [type, setType] = useState(false)
   const [data, setData] = useState(false)
   const [position, setPosition] = useState({
@@ -20,19 +17,19 @@ const UseEffectComponent = () => {
     }
   }, [type])
 
-  // const mouseMoveHandler = event => {
-  //   setPosition({
-  //     x: event.clientX,
-  //     y: event.clientY,
-  //   })
-  // }
-  //
-  // useEffect(() => {
-  //   window.addEventListener('mousemove', mouseMoveHandler)
-  //   return () => {
-  //     window.removeEventListener('mousemove', mouseMoveHandler)
-  //   }
-  // }, [])
+  const mouseMoveHandler = event => {
+    setPosition({
+      x: event.clientX,
+      y: event.clientY,
+    })
+  }
+
+  useEffect(() => {
+    window.addEventListener('mousemove', mouseMoveHandler)
+    return () => {
+      window.removeEventListener('mousemove', mouseMoveHandler)
+    }
+  }, [])
 
   return (
     <div className='posts-container'>
@@ -50,7 +47,4 @@ const UseEffectComponent = () => {
       </div>
     </div>
   )
-
 };
-
-export default UseEffectComponent;

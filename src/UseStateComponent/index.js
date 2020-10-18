@@ -1,14 +1,11 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './UseStateComponent.less';
 
 const computeInitialCounter = () => {
   return Math.trunc(Math.random() * 50)
 };
 
-const UseStateComponent = () => {
-
-  console.log('Render UseStateComponent')
-
+export default () => {
   const [counter, setCounter] = useState(() => {
     return computeInitialCounter()
   })
@@ -62,5 +59,3 @@ const UseStateComponent = () => {
     </div>
   )
 };
-
-export default UseStateComponent;
