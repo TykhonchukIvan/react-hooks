@@ -1,0 +1,45 @@
+.generate-items-container {
+  user-select: none;
+  max-width: 350px;
+  margin: 10px auto;
+  border: 1px solid black;
+  padding: 20px;
+
+  &__title {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-around;
+
+    &-add {
+      padding: 5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      text-align: center;
+      border-radius: 3px;
+      background-color: #008171;
+      color: white;
+    }
+
+    &-change {
+      padding: 5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      text-align: center;
+      border-radius: 3px;
+      background-color: #d0d700;
+      color: white;
+    }
+  }
+
+  &__display {
+    margin: 10px auto;
+    overflow: scroll;
+    overflow-x: hidden;
+    max-height: 100px;
+  }
+}
