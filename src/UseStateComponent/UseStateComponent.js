@@ -2,11 +2,13 @@ import React, {useState} from 'react';
 import './UseStateComponent.less';
 
 const computeInitialCounter = () => {
-  console.log('Some calculation...')
   return Math.trunc(Math.random() * 50)
 };
 
 const UseStateComponent = props => {
+
+  console.log('Render UseStateComponent')
+
   const [counter, setCounter] = useState(() => {
     return computeInitialCounter()
   })
