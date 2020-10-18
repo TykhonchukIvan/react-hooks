@@ -2,7 +2,7 @@ import React, {useState, useCallback} from 'react';
 import ItemsList from './ItemsList';
 import './UseCallbackComponent.less';
 
-const UseCallbackComponent = props => {
+const UseCallbackComponent = () => {
 
   console.log('Render UseCallbackComponent')
 

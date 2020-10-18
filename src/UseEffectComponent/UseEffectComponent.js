@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './UseEffectComponent.less';
 
-const UseEffectComponent = props => {
+const UseEffectComponent = () => {
 
   console.log('Render UseEffectComponent')
 

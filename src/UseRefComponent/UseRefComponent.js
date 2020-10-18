@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useRef} from 'react';
 import './UseRefComponent.less';
 
-const UseRefComponent = props => {
+const UseRefComponent = () => {
   console.log('Render UseRefComponent')
 
   const [value, setValue] = useState('initial')

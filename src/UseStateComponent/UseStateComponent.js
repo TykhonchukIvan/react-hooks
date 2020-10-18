@@ -5,7 +5,7 @@ const computeInitialCounter = () => {
   return Math.trunc(Math.random() * 50)
 };
 
-const UseStateComponent = props => {
+const UseStateComponent = () => {
 
   console.log('Render UseStateComponent')
 

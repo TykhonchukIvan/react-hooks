@@ -4,8 +4,9 @@ import UseEffectComponent from './UseEffectComponent/UseEffectComponent';
 import UseRefComponent from './UseRefComponent/UseRefComponent';
 import UseMemoComponent from './UseMemoComponent/UseMemoComponent';
 import UseCallbackComponent from './UseCallbackComponent/UseCallbackComponent';
+import UseContextComponent from './UseContextComponent/UseContextComponent';
 
-const App = props => {
+const App = () => {
   return (
     <>
       <UseStateComponent/>
@@ -13,6 +14,7 @@ const App = props => {
       <UseRefComponent/>
       <UseMemoComponent/>
       <UseCallbackComponent/>
+      <UseContextComponent/>
     </>
   )
 }
