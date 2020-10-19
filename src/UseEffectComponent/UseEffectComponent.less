@@ -1,0 +1,60 @@
+.posts-container {
+  user-select: none;
+  max-width: 350px;
+  margin: 10px auto;
+  border: 1px solid black;
+  padding: 20px;
+
+  &__title {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__btn {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+
+    &-users {
+      padding: 5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      text-align: center;
+      border-radius: 3px;
+      background-color: green;
+      color: white;
+    }
+
+    &-todos {
+      padding: 5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      text-align: center;
+      border-radius: 3px;
+      background-color: green;
+      color: white;
+    }
+
+    &-posts {
+      padding: 5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      text-align: center;
+      border-radius: 3px;
+      background-color: green;
+      color: white;
+    }
+  }
+
+  &__display {
+    margin: 10px auto;
+    overflow: scroll;
+    overflow-x: hidden;
+    max-height: 300px;
+
+    pre {
+      white-space: pre-line;
+    }
+  }
+}
