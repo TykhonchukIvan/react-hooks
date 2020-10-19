@@ -5,9 +5,9 @@ import UseRefComponent from './UseRefComponent';
 import UseMemoComponent from './UseMemoComponent';
 import UseCallbackComponent from './UseCallbackComponent';
 import UseContextComponent from './UseContextComponent';
+import UseReducerComponent from './UseReducerComponent';
 
-const App = () => {
-  return (
+export default () =>
     <>
       <UseStateComponent/>
       <UseEffectComponent/>
@@ -15,7 +15,5 @@ const App = () => {
       <UseMemoComponent/>
       <UseCallbackComponent/>
       <UseContextComponent/>
+      <UseReducerComponent/>
     </>
-  )
-}
-export default App;
