@@ -6,7 +6,7 @@ import UseMemoComponent from './UseMemoComponent';
 import UseCallbackComponent from './UseCallbackComponent';
 import UseContextComponent from './UseContextComponent';
 import UseReducerComponent from './UseReducerComponent';
-
+import UseCreateHooks from './UseCreateHooks'
 export default () =>
     <>
       <UseStateComponent/>
@@ -16,4 +16,5 @@ export default () =>
       <UseCallbackComponent/>
       <UseContextComponent/>
       <UseReducerComponent/>
+      <UseCreateHooks/>
     </>
